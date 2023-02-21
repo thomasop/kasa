@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../conponents/Header";
 
-const Error404 = () => {
+const Home: React.FC = () => {
   return (
     <>
       <Header />
-      <div>Error404</div>
+      <div>Home</div>
     </>
   );
 };
 
-export default Error404;
+export default Home;

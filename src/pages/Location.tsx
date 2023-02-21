@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../conponents/Header";
 
-const Location = () => {
+const Location: React.FC = () => {
   return (
     <>
       <Header />
