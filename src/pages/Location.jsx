@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../conponents/Header";
 
 const Location = () => {
   return (
-    <div>Location</div>
-  )
-}
+    <>
+      <Header />
+      <div>Location</div>
+    </>
+  );
+};
 
-export default Location
+export default Location;

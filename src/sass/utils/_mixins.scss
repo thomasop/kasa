@@ -1,0 +1,21 @@
+@import "./maps";
+
+/* Mixins for responsive device */
+
+@mixin minimobile {
+    @media screen and (max-width: map-get($break, minimobile)) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: map-get($break, mobile)) {
+        @content
+    }
+}
+
+@mixin tablette {
+    @media screen and (max-width: map-get($break, tablette)) {
+        @content
+    }
+}

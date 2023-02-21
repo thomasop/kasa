@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
 import Location from "./pages/Location";
+import "./css/style.css"
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

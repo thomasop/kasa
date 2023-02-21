@@ -1,0 +1,14 @@
+/* Variable for color and animation duration */
+
+$color-primaire: #FF6060;
+$color-secondaire: #FF79DA;
+$other-color: #f6f6f6;
+$shadow-color: #00000045;
+
+$anim-dur: 400ms;
+
+$shadow: 0px 3px 8px 2px $shadow-color;
+$shadow-hover: 1px 5px 9px 6px $shadow-color;
+
+$background-button: #686868;
+$shadow-button: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));

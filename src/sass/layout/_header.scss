@@ -1,0 +1,69 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/* Header tag */
+
+.header {
+    display: flex;
+    &__figure {
+        flex: 2;
+        margin: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        @include tablette {
+            flex: unset;
+        }
+    }
+    &__img {
+        display: flex;
+        align-self: center;
+        @include mobile {
+            width: 145px;
+            height: 47px;
+        }
+        @include minimobile {
+            width: 120px;
+            height: 40px;
+        }
+    }
+    &__nav {
+        width: 100%;
+        flex: 1;
+        align-self: center;
+        @include tablette {
+            flex: unset;
+        }
+    }
+    &__ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 20px;
+    }
+    &__li {
+        list-style-type: none;
+    }
+    &__a {
+        text-decoration: none;
+        color: $color-primaire;
+        font-size: 24px;
+        font-weight: 500;
+        @include tablette {
+            font-size: 18px;
+        }
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+    
+}
+
+.active {
+    border-bottom: 2px solid $color-primaire;
+}

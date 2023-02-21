@@ -1,0 +1,115 @@
+/* import police on google font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+/* Variable for color and animation duration */ /* Maps for responsive device */
+/* Maps for responsive device */
+/* Mixins for responsive device */
+/* like animation */ /* Maps for responsive device */
+/* Mixins for responsive device */
+/* import police on google font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+/* Maps for responsive device */
+/* Mixins for responsive device */
+/* Base tag */
+body {
+  margin: 50px 100px 0px 100px;
+  font-family: "Montserrat";
+}
+@media screen and (max-width: 992px) {
+  body {
+    margin: 30px 50px 0px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 20px 20px 0px 20px;
+  }
+}
+
+/* Maps for responsive device */
+/* Mixins for responsive device */
+/* Variable for color and animation duration */
+/* Header tag */
+.header {
+  display: flex;
+}
+.header__figure {
+  flex: 2;
+  margin: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+@media screen and (max-width: 992px) {
+  .header__figure {
+    flex: unset;
+  }
+}
+.header__img {
+  display: flex;
+  align-self: center;
+}
+@media screen and (max-width: 600px) {
+  .header__img {
+    width: 145px;
+    height: 47px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .header__img {
+    width: 120px;
+    height: 40px;
+  }
+}
+.header__nav {
+  width: 100%;
+  flex: 1;
+  align-self: center;
+}
+@media screen and (max-width: 992px) {
+  .header__nav {
+    flex: unset;
+  }
+}
+.header__ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+}
+.header__li {
+  list-style-type: none;
+}
+.header__a {
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media screen and (max-width: 992px) {
+  .header__a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__a {
+    font-size: 12px;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #FF6060;
+}
+
+/* Maps for responsive device */
+/* Mixins for responsive device */ /* Footer tag */
+/* Variable for color and animation duration */
+/* Style for home page */
+/* Variable for color and animation duration */
+/* Style for menu page */
+
+/*# sourceMappingURL=style.css.map */
