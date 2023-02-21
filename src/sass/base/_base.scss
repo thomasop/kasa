@@ -4,14 +4,7 @@
 
 /* Base tag */
 
-
 body {
-    margin: 50px 100px 0px 100px;
+    margin: 0px;
     font-family: 'Montserrat';
-    @include tablette {
-        margin: 30px 50px 0px 50px;
-    }
-    @include mobile {
-        margin: 20px 20px 0px 20px;
-    }
 }

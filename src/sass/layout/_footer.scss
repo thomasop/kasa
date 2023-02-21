@@ -1,3 +1,40 @@
 @import "../utils/mixins";
 
 /* Footer tag */
+
+
+.footer {
+    background-color: black;
+    &__img {
+        padding-top: 66px;
+        width: 122px;
+        @include tablette {
+            padding-top: 57px;
+        }
+        @include mobile {
+            padding-top: 60px;
+        }
+    }
+    &__p {
+        text-align: center;
+        margin: 0px;
+        &--font {
+            font-family: 'Montserrat';
+            font-size: 24px;
+            color: white;
+            font-weight: 500;
+            padding-top: 32px;
+            padding-bottom: 29px;
+            @include tablette {
+                font-size: 18px;
+                padding-top: 26px;
+                padding-bottom: 50px;
+            }
+            @include mobile {
+                padding-top: 22px;
+                padding-bottom: 60px;
+                font-size: 12px;
+            }
+        }
+    }
+}

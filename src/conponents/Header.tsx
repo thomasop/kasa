@@ -13,7 +13,7 @@ const Header: React.FC = () => {
             <li className="header__li">
               <NavLink className="header__a" to="/">Accueil</NavLink>
             </li>
-            <li className="header__li">
+            <li className="header__li header__li--padding">
               <NavLink className="header__a" to="/about">A Propos</NavLink>
             </li>
           </ul>

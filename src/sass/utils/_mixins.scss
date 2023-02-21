@@ -19,3 +19,9 @@
         @content
     }
 }
+
+@mixin bigdesktop {
+    @media screen and (min-width: map-get($break, bigdesktop)) {
+        @content
+    }
+}
