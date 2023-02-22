@@ -1,0 +1,81 @@
+@import "../utils/mixins";
+
+/* Fetchone conponent */
+
+.housing {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px 0px 100px;
+    @include tablette {
+        margin: 30px 50px 0px 50px;
+    }
+    @include mobile {
+        margin: 20px 20px 0px 20px;
+        display: block;
+    }
+    &__h1 {
+        color: $color-primaire;
+        font-size: 36px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        margin: 0px;
+        padding: 0px;
+        @include tablette {
+            font-size: 24px;
+        }
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+    &__p {
+        color: $color-primaire;
+        font-size: 18px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+        @include tablette {
+            font-size: 16px;
+        }
+        @include mobile {
+            font-size: 14px;
+            padding-top: 5px;
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+        width: 250px;
+    }
+    &__li {
+        list-style-type: none;
+        background-color: $color-primaire;
+        color: white;
+        width: 115px;
+        padding: 3px 0px;        
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    &__h2 {
+        color: $color-primaire;
+        font-size: 18px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        width: 90px;
+    }
+    &__img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        align-self: center;
+    }
+    &__div--flex {
+        display: flex;
+    }
+}

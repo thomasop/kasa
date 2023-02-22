@@ -36,15 +36,15 @@ const Fetchall: React.FC = () => {
 
   return (
     <>
-      <div className="housing">
+      <div className="housings">
         {datas?.map((data) => {
           return (
             <Link
-              className="housing__a"
+              className="housings__a"
               to={`/location/${data.id}`}
               key={data.id}
             >
-              <img className="housing__img" src={data.cover} alt="" /><span className="housing__span">{data.title}</span>
+              <img className="housings__img" src={data.cover} alt="" /><span className="housings__span">{data.title}</span>
             </Link>
             
           );

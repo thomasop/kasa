@@ -166,7 +166,7 @@ body {
 
 /* Maps for responsive device */
 /* Mixins for responsive device */ /* Fetchall conponent */
-.housing {
+.housings {
   margin: 43px 100px 100px 100px;
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -177,52 +177,52 @@ body {
   padding: 56px 30px 50px 30px;
 }
 @media screen and (min-width: 2000px) {
-  .housing {
+  .housings {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 1330px) {
-  .housing {
+  .housings {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 992px) {
-  .housing {
+  .housings {
     margin: 30px 50px 50px 50px;
   }
 }
 @media screen and (max-width: 850px) {
-  .housing {
+  .housings {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 600px) {
-  .housing {
+  .housings {
     row-gap: 20px;
     background-color: unset;
     margin: 22px 20px 50px 20px;
     padding: 0px;
   }
 }
-.housing__img {
+.housings__img {
   object-fit: cover;
   width: 340px;
   height: 340px;
   border-radius: 10px;
 }
 @media screen and (max-width: 992px) {
-  .housing__img {
+  .housings__img {
     width: 335px;
     height: 255px;
   }
 }
 @media screen and (max-width: 321px) {
-  .housing__img {
+  .housings__img {
     width: 275px;
     height: 235px;
   }
 }
-.housing__span {
+.housings__span {
   position: absolute;
   font-family: "Montserrat";
   font-size: 18px;
@@ -234,17 +234,109 @@ body {
   margin-top: 280px;
 }
 @media screen and (max-width: 992px) {
-  .housing__span {
+  .housings__span {
     max-width: 295px;
     margin-top: 195px;
   }
 }
 @media screen and (max-width: 321px) {
-  .housing__span {
+  .housings__span {
     max-width: 245px;
     margin-top: 175px;
     margin-left: -260px;
   }
+}
+
+/* Maps for responsive device */
+/* Mixins for responsive device */ /* Fetchone conponent */
+.housing {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 100px 0px 100px;
+}
+@media screen and (max-width: 992px) {
+  .housing {
+    margin: 30px 50px 0px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .housing {
+    margin: 20px 20px 0px 20px;
+    display: block;
+  }
+}
+.housing__h1 {
+  color: #FF6060;
+  font-size: 36px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 992px) {
+  .housing__h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .housing__h1 {
+    font-size: 18px;
+  }
+}
+.housing__p {
+  color: #FF6060;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 992px) {
+  .housing__p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .housing__p {
+    font-size: 14px;
+    padding-top: 5px;
+    margin: 0px 0px 10px 0px;
+  }
+}
+.housing__ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  width: 250px;
+}
+.housing__li {
+  list-style-type: none;
+  background-color: #FF6060;
+  color: white;
+  width: 115px;
+  padding: 3px 0px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+}
+.housing__h2 {
+  color: #FF6060;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  width: 90px;
+}
+.housing__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  align-self: center;
+}
+.housing__div--flex {
+  display: flex;
 }
 
 /* Variable for color and animation duration */
