@@ -1,0 +1,70 @@
+@import "../utils/mixins";
+
+/* Fetchall conponent */
+
+.housing {
+    margin: 50px 100px 100px 100px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 50px;
+    padding: 56px 30px 50px 30px;
+    @include bigdesktop {
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    @include littledesktop {
+        grid-template-columns: 1fr 1fr ;
+    }
+    @include tablette {
+        margin: 30px 50px 0px 50px;
+    }
+    @include littletablette {
+        grid-template-columns: 1fr;
+    }
+    @include mobile {
+        row-gap: 20px;
+        background-color: unset;
+        margin: 50px 20px 100px 20px;
+        padding: 0px;
+    }
+    &__img {
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        @include tablette {
+            width: 335px;
+            height: 255px;
+        }
+        @include mobile {
+            width: 335px;
+            height: 255px;
+        }
+        @include minimobile {
+            width: 275px;
+            height: 235px;
+        }
+    }
+    &__span {
+        position: absolute;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        margin-left: -320px;
+        max-width: 300px;
+        margin-top: 280px;
+        @include tablette {
+            max-width: 295px;
+            margin-top: 195px;
+        }
+        @include minimobile {
+            max-width: 245px;
+            margin-top: 175px;
+            margin-left: -260px;
+        }
+    }
+}

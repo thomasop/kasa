@@ -14,8 +14,26 @@
     }
 }
 
+@mixin littletablette {
+    @media screen and (max-width: map-get($break, littletablette)) {
+        @content
+    }
+}
+
 @mixin tablette {
     @media screen and (max-width: map-get($break, tablette)) {
+        @content
+    }
+}
+
+@mixin littledesktop {
+    @media screen and (max-width: map-get($break, littledesktop)) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($break, desktop)) {
         @content
     }
 }
