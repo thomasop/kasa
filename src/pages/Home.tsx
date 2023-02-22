@@ -8,9 +8,11 @@ const Home: React.FC = () => {
     <>
       <Header />
       <main>
+        <div className="banner">
+          <h1 className="banner__h1">Chez vous, partout et ailleurs</h1>
+        </div>
         <Fetchall />
       </main>
-
       <Footer />
     </>
   );

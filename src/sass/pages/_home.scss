@@ -1,3 +1,41 @@
 @import "../utils/variables";
 
 /* Style for home page */
+
+.banner {
+    margin: 70px 100px 0px 100px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../../public/homeimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    @include tablette {
+        margin: 0px 50px;
+    }
+    @include mobile {
+        width: 335px;
+        border-radius: 10px;
+        margin: 20px auto 0px auto;
+    }
+    @include minimobile {
+        width: 275px;
+    }
+
+    &__h1 {
+        position: relative;
+        z-index: 1;
+        padding: 78px 0px;
+        text-align: center;
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 48px;
+        @include mobile {
+            width: 217px;
+            margin: 0px;
+            text-align: unset;
+            padding: 31px 0px 32px 16px;
+            font-size: 24px;
+        }
+    }
+}

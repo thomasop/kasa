@@ -167,7 +167,7 @@ body {
 /* Maps for responsive device */
 /* Mixins for responsive device */ /* Fetchall conponent */
 .housing {
-  margin: 50px 100px 100px 100px;
+  margin: 43px 100px 100px 100px;
   background-color: #F6F6F6;
   border-radius: 25px;
   display: grid;
@@ -188,7 +188,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .housing {
-    margin: 30px 50px 0px 50px;
+    margin: 30px 50px 50px 50px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -200,7 +200,7 @@ body {
   .housing {
     row-gap: 20px;
     background-color: unset;
-    margin: 50px 20px 100px 20px;
+    margin: 22px 20px 50px 20px;
     padding: 0px;
   }
 }
@@ -211,12 +211,6 @@ body {
   border-radius: 10px;
 }
 @media screen and (max-width: 992px) {
-  .housing__img {
-    width: 335px;
-    height: 255px;
-  }
-}
-@media screen and (max-width: 600px) {
   .housing__img {
     width: 335px;
     height: 255px;
@@ -255,6 +249,51 @@ body {
 
 /* Variable for color and animation duration */
 /* Style for home page */
+.banner {
+  margin: 70px 100px 0px 100px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../public/homeimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}
+@media screen and (max-width: 992px) {
+  .banner {
+    margin: 0px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    width: 335px;
+    border-radius: 10px;
+    margin: 20px auto 0px auto;
+  }
+}
+@media screen and (max-width: 321px) {
+  .banner {
+    width: 275px;
+  }
+}
+.banner__h1 {
+  position: relative;
+  z-index: 1;
+  padding: 78px 0px;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 48px;
+}
+@media screen and (max-width: 600px) {
+  .banner__h1 {
+    width: 217px;
+    margin: 0px;
+    text-align: unset;
+    padding: 31px 0px 32px 16px;
+    font-size: 24px;
+  }
+}
+
 /* Variable for color and animation duration */
 /* Style for menu page */
 
