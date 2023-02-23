@@ -5,12 +5,12 @@
 .housing {
     display: flex;
     justify-content: space-between;
-    margin: 50px 100px 0px 100px;
+    margin: 20px 100px 0px 100px;
     @include tablette {
-        margin: 30px 50px 0px 50px;
+        margin: 10px 50px 0px 50px;
     }
     @include mobile {
-        margin: 20px 20px 0px 20px;
+        margin: 0px 20px 0px 20px;
         display: block;
     }
     &__h1 {
@@ -45,22 +45,25 @@
     }
     &__ul {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
         margin: 0px;
         padding: 0px;
-        width: 250px;
+        row-gap: 10px;
     }
     &__li {
         list-style-type: none;
         background-color: $color-primaire;
         color: white;
-        width: 115px;
-        padding: 3px 0px;        
+        padding: 3px 40px;        
         font-family: "Montserrat";
         font-weight: 500;
         font-size: 14px;
         text-align: center;
         border-radius: 10px;
+        margin-right: 10px;
+        @include mobile {
+            padding: 2px 30px;    
+        }
     }
     &__h2 {
         color: $color-primaire;

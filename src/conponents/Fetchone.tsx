@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Carrousel from "./Carrousel";
 import Collapse from "./Collapse";
 import Rating from "./Rating";
 
@@ -7,7 +8,7 @@ interface dataType {
   id: string;
   title: string;
   cover: string;
-  picture: string[];
+  pictures: string[];
   description: string;
   host: Host;
   rating: string;
@@ -45,13 +46,20 @@ const Fetchone: React.FC = () => {
 
   return (
     <>
+      <div className="carrousel">
+        <Carrousel images={datas?.pictures} />
+      </div>
       <div className="housing">
         <div className="housing__div--one">
           <h1 className="housing__h1">{datas?.title}</h1>
           <p className="housing__p">{datas?.location}</p>
           <ul className="housing__ul">
             {datas?.tags.map((tag, key) => {
-              return <li className={"housing__li"} key={key}>{tag}</li>;
+              return (
+                <li className={"housing__li"} key={key}>
+                  {tag}
+                </li>
+              );
             })}
           </ul>
         </div>

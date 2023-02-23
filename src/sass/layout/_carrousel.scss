@@ -1,0 +1,74 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.carrousel {
+    margin: 50px 100px 0px 100px;
+    @include tablette {
+        margin: 30px 50px 0px 50px;
+    }
+    @include mobile {
+        margin: 30px 20px 0px 20px;
+    }
+    &__img {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+        @include mobile {
+            border-radius: 10px;
+            height: 255px;
+        }
+    }
+    &__previous {
+        position: absolute;
+        left: 0;
+        top: 335px;
+        margin-left: 123px;
+        @include tablette {
+            width: 27px;
+            height: 35px;
+            top: 304px;
+        }
+        @include mobile {
+            width: 12px;
+            height: 20px;
+            margin-left: 30px;
+            top: 214px;
+        }
+    }
+    &__next {
+        position: absolute;
+        right: 0;
+        float: right;
+        top: 335px;
+        margin: 0px 123px;
+        @include tablette {
+            width: 27px;
+            height: 35px;
+            top: 304px;
+        }
+        @include mobile {
+            width: 12px;
+            height: 20px;
+            margin-right: 30px;
+            top: 214px;
+        }
+    }
+    &__p {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        position: relative;
+        margin: 0px;
+        bottom: 50px;
+        @include tablette {
+            bottom: 50px;
+        }
+        @include mobile {
+            font-size: 14px;
+            bottom: 30px;
+        }
+    }
+}
