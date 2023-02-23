@@ -665,6 +665,73 @@ body {
 }
 
 /* Variable for color and animation duration */
-/* Style for menu page */
+/* Style for error page */
+.error__h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 288px;
+  color: #FF6060;
+  margin: 0px;
+  padding-top: 169px;
+  padding-bottom: 66px;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .error__h1 {
+    font-size: 150px;
+    padding-top: 175px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .error__h1 {
+    font-size: 96px;
+    padding-top: 195px;
+    padding-bottom: 11px;
+  }
+}
+.error__p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 36px;
+  color: #FF6060;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 182px;
+}
+@media screen and (max-width: 992px) {
+  .error__p {
+    font-size: 24px;
+    padding-bottom: 153px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .error__p {
+    font-size: 18px;
+    padding-bottom: 133px;
+    width: 225px;
+    margin: auto;
+  }
+}
+.error__a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #FF6060;
+  display: block;
+  text-align: center;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 992px) {
+  .error__a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .error__a {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
