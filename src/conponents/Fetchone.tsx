@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Collapse from "./Collapse";
 
 interface dataType {
   id: string;
@@ -10,7 +11,7 @@ interface dataType {
   host: Host;
   rating: string;
   location: string;
-  equipements: string[];
+  equipments: string[];
   tags: string[];
 }
 
@@ -59,6 +60,10 @@ const Fetchone: React.FC = () => {
             <img className="housing__img" src={datas?.host.picture} alt="" />
           </div>
         </div>
+      </div>
+      <div className="collapse-location">
+        <Collapse name="Description" data={datas?.description} />
+        <Collapse name="Equipements" data={datas?.equipments} />
       </div>
     </>
   );

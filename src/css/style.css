@@ -339,6 +339,127 @@ body {
   display: flex;
 }
 
+/* Maps for responsive device */
+/* Mixins for responsive device */
+/* Variable for color and animation duration */
+/* Collapse conponent */
+.collapse-location {
+  display: flex;
+  margin: 43px 100px 50px 100px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .collapse-location {
+    display: block;
+    margin: 30px 50px 40px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collapse-location {
+    display: block;
+    margin: 43px 20px 30px 20px;
+  }
+}
+.collapse-location__h1 {
+  background-color: #FF6060;
+  border-radius: 10px;
+  padding: 20px 0px 20px 13px;
+  color: white;
+  margin: 0px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .collapse-location__h1 {
+    font-size: 15px;
+    padding: 13px 0px 13px 13px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collapse-location__h1 {
+    font-size: 13px;
+    padding: 9px 0px 9px 13px;
+  }
+}
+.collapse-location__p {
+  background-color: #F6F6F6;
+  padding: 50px 12px 0px 20px;
+  margin: 0px;
+  height: 250px;
+  margin-top: -30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  color: #FF6060;
+}
+@media screen and (max-width: 992px) {
+  .collapse-location__p {
+    font-size: 14px;
+    height: 170px;
+    padding: 40px 11px 0px 11px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collapse-location__p {
+    font-size: 12px;
+    height: 140px;
+    padding: 40px 11px 0px 11px;
+  }
+}
+.collapse-location__div {
+  width: 582px;
+}
+@media screen and (max-width: 1330px) {
+  .collapse-location__div {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .collapse-location__div {
+    width: unset;
+  }
+}
+.collapse-location__img {
+  position: relative;
+  top: -40px;
+  left: 530px;
+}
+@media screen and (max-width: 1330px) {
+  .collapse-location__img {
+    left: 350px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .collapse-location__img {
+    left: unset;
+    right: 0;
+    top: -31px;
+    margin: 0px 20px;
+    float: right;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collapse-location__img {
+    width: 20px;
+    height: 15px;
+    top: -25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .collapse-location__div:last-child h1 {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collapse-location__div:last-child h1 {
+    margin-top: 20px;
+  }
+}
+
 /* Variable for color and animation duration */
 /* Style for home page */
 .banner {

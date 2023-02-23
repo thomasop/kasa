@@ -1,0 +1,99 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/* Collapse conponent */
+
+.collapse-location {
+    display: flex;
+    margin: 43px 100px 50px 100px;
+    justify-content: space-between;
+    @include tablette {
+        display: block;
+        margin: 30px 50px 40px 50px;
+    }
+    @include mobile {
+        display: block;
+        margin: 43px 20px 30px 20px;
+    }
+    &__h1 {
+        background-color: $color-primaire;
+        border-radius: 10px;
+        padding: 20px 0px 20px 13px;
+        color: white;
+        margin: 0px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
+        @include tablette {
+            font-size: 15px;
+            padding: 13px 0px 13px 13px;
+        }
+        @include mobile {
+            font-size: 13px;
+            padding: 9px 0px 9px 13px;
+        }
+    }
+
+    &__p {
+        background-color: #F6F6F6;
+        padding: 50px 12px 0px 20px;
+        margin: 0px;
+        height: 250px;
+        margin-top: -30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        color: $color-primaire;
+        @include tablette {
+            font-size: 14px;
+            height: 170px;
+            padding: 40px 11px 0px 11px;
+        }
+        @include mobile {
+            font-size: 12px;
+            height: 140px;
+            padding: 40px 11px 0px 11px;
+        }
+    }
+    &__div {
+        width: 582px;
+        @include littledesktop {
+            width: 390px;
+        }
+        @include tablette {
+            width: unset;
+        }
+    }
+    &__img {
+        position: relative;
+        top: -40px;
+        left: 530px;
+        @include littledesktop {
+            left: 350px;
+        }
+        @include tablette {
+            left: unset;
+            right: 0;
+            top: -31px;
+            margin: 0px 20px;
+            float: right;
+        }
+        @include mobile {
+            width: 20px;
+            height: 15px;
+            top: -25px;
+        }
+    }
+
+    &__div:last-child h1 {
+        @include tablette {
+            margin-top: 20px;
+        }
+        @include mobile {
+            margin-top: 20px;
+        }
+    }
+}
