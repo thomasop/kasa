@@ -23,8 +23,12 @@
         }
     }
     &__img {
-        display: flex;
-        align-self: center;
+        margin: 0px;
+        background-image: url('../../public/LOGO.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 210px;
+        height: 68px;
         @include mobile {
             width: 145px;
             height: 47px;

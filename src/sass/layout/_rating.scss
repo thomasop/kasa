@@ -1,0 +1,27 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+
+.rating {
+    margin-top: 14px;
+    @include tablette {
+        margin-top: 5px;
+    }
+    @include mobile {
+        align-self: center;
+        margin-top: unset;
+        margin-left: -5px;
+    }
+    &__img {
+        padding-left: 10px;
+        @include tablette {
+            width: 20px;
+            height: 20px;
+        }
+        @include mobile {
+            padding-left: 5px;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

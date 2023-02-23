@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Collapse from "./Collapse";
+import Rating from "./Rating";
 
 interface dataType {
   id: string;
@@ -59,6 +60,7 @@ const Fetchone: React.FC = () => {
             <h2 className="housing__h2">{datas?.host.name}</h2>
             <img className="housing__img" src={datas?.host.picture} alt="" />
           </div>
+          <Rating nbRating={datas?.rating} />
         </div>
       </div>
       <div className="collapse-location">

@@ -5,9 +5,9 @@ const Header: React.FC = () => {
   return (
     <>
       <header className="header">
-        <figure className="header__figure">
-          <img className="header__img" src="./LOGO.svg" alt="" />
-        </figure>
+        <div className="header__figure">
+          <p className="header__img"></p>
+        </div>
         <nav className="header__nav">
           <ul className="header__ul">
             <li className="header__li">
