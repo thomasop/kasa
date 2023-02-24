@@ -1,0 +1,18 @@
+/* Style for about page */
+
+.about {
+    margin: 44px 100px 30px 100px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../../public/assets/aboutimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    height: 223px;
+    @include tablette {
+        margin: 30px 50px 25px 50px;
+    }
+    @include mobile {
+        border-radius: 10px;
+        margin: 17px 20px 19px 20px;
+    }
+}
