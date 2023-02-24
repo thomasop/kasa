@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <section>
         <p className="footer__p">
-          <img className="footer__img" src="./LOGOfooter.svg" alt="" />
+          <img className="footer__img" src="../assets/LOGOfooter.svg" alt="" />
         </p>
         <p className="footer__p footer__p--font">
           © 2020 Kasa. All rights reserved

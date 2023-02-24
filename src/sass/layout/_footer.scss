@@ -1,9 +1,7 @@
-@import "../utils/mixins";
-
-/* Footer tag */
+/* Footer conponent */
 
 .footer {
-    background-color: black;
+    background-color: $color-black;
     &__img {
         padding-top: 66px;
         width: 122px;
@@ -18,10 +16,9 @@
         text-align: center;
         margin: 0px;
         &--font {
-            font-family: 'Montserrat';
             font-size: 24px;
-            color: white;
             font-weight: 500;
+            color: $color-white;
             padding-top: 32px;
             padding-bottom: 29px;
             @include tablette {

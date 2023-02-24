@@ -22,9 +22,9 @@ const Rating: React.FC<propsType> = ({ nbRating }) => {
     <div className="rating">
       {arrayRating.map((rat, key) => {
         return rat === "full" ? (
-          <img key={key} className="rating__img" src="../VectorFull.svg" alt="" />
+          <img key={key} className="rating__img" src="../assets/VectorFull.svg" alt="" />
         ) : (
-          <img key={key} className="rating__img" src="../VectorEmpty.svg" alt="" />
+          <img key={key} className="rating__img" src="../assets/VectorEmpty.svg" alt="" />
         );
       })}
     </div>

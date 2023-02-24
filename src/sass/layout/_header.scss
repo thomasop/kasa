@@ -1,7 +1,4 @@
-@import "../utils/mixins";
-@import "../utils/variables";
-
-/* Header tag */
+/* Header conponent */
 
 .header {
     margin: 50px 100px 0px 100px;
@@ -24,7 +21,7 @@
     }
     &__img {
         margin: 0px;
-        background-image: url('../../public/LOGO.svg');
+        background-image: url('../../public/assets/LOGO.svg');
         background-repeat: no-repeat;
         background-size: contain;
         width: 210px;

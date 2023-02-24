@@ -12,13 +12,10 @@
 /* Base tag */
 body {
   margin: 0px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Maps for responsive device */
-/* Mixins for responsive device */
-/* Variable for color and animation duration */
-/* Header tag */
+/* Header conponent */
 .header {
   margin: 50px 100px 0px 100px;
   display: flex;
@@ -49,7 +46,7 @@ body {
 }
 .header__img {
   margin: 0px;
-  background-image: url("../../public/LOGO.svg");
+  background-image: url("../../public/assets/LOGO.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 210px;
@@ -122,8 +119,7 @@ body {
   border-bottom: 2px solid #FF6060;
 }
 
-/* Maps for responsive device */
-/* Mixins for responsive device */ /* Footer tag */
+/* Footer conponent */
 .footer {
   background-color: black;
 }
@@ -146,10 +142,9 @@ body {
   margin: 0px;
 }
 .footer__p--font {
-  font-family: "Montserrat";
   font-size: 24px;
-  color: white;
   font-weight: 500;
+  color: white;
   padding-top: 32px;
   padding-bottom: 29px;
 }
@@ -168,8 +163,7 @@ body {
   }
 }
 
-/* Maps for responsive device */
-/* Mixins for responsive device */ /* Fetchall conponent */
+/* Fetchall conponent */
 .housings {
   margin: 43px 100px 100px 100px;
   background-color: #F6F6F6;
@@ -228,7 +222,6 @@ body {
 }
 .housings__span {
   position: absolute;
-  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -251,8 +244,7 @@ body {
   }
 }
 
-/* Maps for responsive device */
-/* Mixins for responsive device */ /* Fetchone conponent */
+/* Fetchone conponent */
 .housing {
   display: flex;
   justify-content: space-between;
@@ -272,7 +264,6 @@ body {
 .housing__h1 {
   color: #FF6060;
   font-size: 36px;
-  font-family: "Montserrat";
   font-weight: 500;
   margin: 0px;
   padding: 0px;
@@ -290,7 +281,6 @@ body {
 .housing__p {
   color: #FF6060;
   font-size: 18px;
-  font-family: "Montserrat";
   font-weight: 500;
   margin: 0px 0px 20px 0px;
   padding: 0px;
@@ -319,9 +309,8 @@ body {
   background-color: #FF6060;
   color: white;
   padding: 3px 40px;
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   text-align: center;
   border-radius: 10px;
   margin-right: 10px;
@@ -334,7 +323,6 @@ body {
 .housing__h2 {
   color: #FF6060;
   font-size: 18px;
-  font-family: "Montserrat";
   font-weight: 500;
   width: 90px;
 }
@@ -368,9 +356,6 @@ body {
   justify-content: end;
 }
 
-/* Maps for responsive device */
-/* Mixins for responsive device */
-/* Variable for color and animation duration */
 /* Collapse conponent */
 .collapse-location {
   display: flex;
@@ -395,9 +380,8 @@ body {
   padding: 20px 0px 20px 13px;
   color: white;
   margin: 0px;
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   position: relative;
 }
 @media screen and (max-width: 992px) {
@@ -420,9 +404,8 @@ body {
   margin-top: -30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   color: #FF6060;
 }
 @media screen and (max-width: 992px) {
@@ -489,9 +472,7 @@ body {
   }
 }
 
-/* Maps for responsive device */
-/* Mixins for responsive device */
-/* Variable for color and animation duration */
+/* Rating conponent */
 .rating {
   margin-top: 14px;
 }
@@ -524,9 +505,7 @@ body {
   }
 }
 
-/* Maps for responsive device */
-/* Mixins for responsive device */
-/* Variable for color and animation duration */
+/* Carrousel conponent */
 .carrousel {
   margin: 50px 100px 0px 100px;
 }
@@ -597,9 +576,8 @@ body {
 }
 .carrousel__p {
   text-align: center;
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   color: white;
   position: relative;
   margin: 0px;
@@ -617,11 +595,83 @@ body {
   }
 }
 
-/* Variable for color and animation duration */
+/* Fetchabout conponent */
+.collapse-about {
+  margin: 43px 200px 100px 200px;
+}
+@media screen and (max-width: 992px) {
+  .collapse-about {
+    margin: 43px 50px 100px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collapse-about {
+    margin: 22px 20px 50px 20px;
+  }
+}
+
+.collapse-about div {
+  width: 100%;
+}
+
+.collapse-about h1 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px 0px 16px 18px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .collapse-about h1 {
+    font-size: 13px;
+    padding: 6px 0px 6px 11px;
+  }
+}
+
+.collapse-about div:last-child h1 {
+  margin-top: 30px;
+}
+
+.collapse-about img {
+  left: unset;
+  float: right;
+  position: relative;
+  top: -40px;
+  right: 0;
+  margin-right: 30px;
+}
+@media screen and (max-width: 600px) {
+  .collapse-about img {
+    top: -22px;
+    margin-right: 10px;
+  }
+}
+
+.collapse-about div div {
+  padding: 27px 0px 20px 0px;
+  height: unset;
+}
+@media screen and (max-width: 600px) {
+  .collapse-about div div {
+    padding: 27px 0px 20px 0px;
+  }
+}
+
+.collapse-about div div p {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0px 18px 0px 26px;
+}
+@media screen and (max-width: 600px) {
+  .collapse-about div div p {
+    font-size: 12px;
+    padding: 0px 6px 0px 11px;
+  }
+}
+
 /* Style for home page */
 .banner {
   margin: 70px 100px 0px 100px;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../public/homeimg.png");
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../public/assets/homeimg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -650,9 +700,8 @@ body {
   padding: 78px 0px;
   text-align: center;
   color: white;
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 48px;
+  font-weight: 500;
 }
 @media screen and (max-width: 600px) {
   .banner__h1 {
@@ -664,10 +713,30 @@ body {
   }
 }
 
-/* Variable for color and animation duration */
+/* Style for about page */
+.about {
+  margin: 44px 100px 30px 100px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../public/assets/aboutimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  height: 223px;
+}
+@media screen and (max-width: 992px) {
+  .about {
+    margin: 30px 50px 25px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    border-radius: 10px;
+    margin: 17px 20px 19px 20px;
+  }
+}
+
 /* Style for error page */
 .error__h1 {
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 288px;
   color: #FF6060;
@@ -691,9 +760,8 @@ body {
   }
 }
 .error__p {
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 36px;
+  font-weight: 500;
   color: #FF6060;
   text-align: center;
   margin: 0px;
@@ -714,9 +782,8 @@ body {
   }
 }
 .error__a {
-  font-family: "Montserrat";
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   text-decoration-line: underline;
   color: #FF6060;
   display: block;

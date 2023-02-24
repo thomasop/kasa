@@ -1,5 +1,4 @@
-@import "../utils/mixins";
-@import "../utils/variables";
+/* Carrousel conponent */
 
 .carrousel {
     margin: 50px 100px 0px 100px;
@@ -56,9 +55,8 @@
     }
     &__p {
         text-align: center;
-        font-family: 'Montserrat';
-        font-weight: 500;
         font-size: 18px;
+        font-weight: 500;
         color: white;
         position: relative;
         margin: 0px;

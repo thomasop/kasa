@@ -6,13 +6,12 @@ interface propsType {
 const Carrousel: React.FC<propsType> = ({ images }) => {
   const [num, setNum] = useState(0);
 
-  return (
-    <>
-      <img className="carrousel__img" src={images && images[num]} alt="" />
-      {images && images.length > 1 ? (
+  const showCollapse = () => {
+    if (images && images.length > 1) {
+      return (
         <>
           <img
-            src="../VectorPrevious.svg"
+            src="../assets/VectorPrevious.svg"
             alt=""
             className="carrousel__previous"
             onClick={() => {
@@ -20,7 +19,7 @@ const Carrousel: React.FC<propsType> = ({ images }) => {
             }}
           />
           <img
-            src="../VectorNext.svg"
+            src="../assets/VectorNext.svg"
             alt=""
             className="carrousel__next"
             onClick={() => {
@@ -31,7 +30,14 @@ const Carrousel: React.FC<propsType> = ({ images }) => {
             {num + 1}/{Number(images?.length)}
           </p>
         </>
-      ) : null}
+      );
+    }
+  };
+
+  return (
+    <>
+      <img className="carrousel__img" src={images && images[num]} alt="" />
+      {showCollapse()}
     </>
   );
 };

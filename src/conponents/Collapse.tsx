@@ -16,19 +16,20 @@ const Collapse: React.FC<propsType> = ({ name, data }) => {
   const imgStyle = {
     transform: styleTransform,
   };
+
+  const updateUseState = () => {
+    collapse === false ? setCollapse(true) : setCollapse(false);
+    styleDisplay === "none" ? setStyleDisplay("block") : setStyleDisplay("none");
+    styleTransform === "rotate(180deg)" ? setStyleTransform("rotate(360deg)") : setStyleTransform("rotate(180deg)");
+  };
+
   return (
     <>
       <div className="collapse-location__div">
         <h1
           className="collapse-location__h1"
           onClick={() => {
-            collapse === false ? setCollapse(true) : setCollapse(false);
-            styleDisplay === "none"
-              ? setStyleDisplay("block")
-              : setStyleDisplay("none");
-            styleTransform === "rotate(180deg)"
-              ? setStyleTransform("rotate(360deg)")
-              : setStyleTransform("rotate(180deg)");
+            updateUseState();
           }}
         >
           {name}
@@ -36,7 +37,7 @@ const Collapse: React.FC<propsType> = ({ name, data }) => {
         <img
           style={imgStyle}
           className="collapse-location__img"
-          src="../Vector.png"
+          src="../assets/Vector.png"
           alt=""
         />
 

@@ -1,10 +1,8 @@
-@import "../utils/mixins";
-
 /* Fetchall conponent */
 
 .housings {
     margin: 43px 100px 100px 100px;
-    background-color: #F6F6F6;
+    background-color: $color-secondaire;
     border-radius: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -45,11 +43,10 @@
     }
     &__span {
         position: absolute;
-        font-family: 'Montserrat';
         font-size: 18px;
         font-weight: 500;
         text-decoration: none;
-        color: white;
+        color: $color-white;
         margin-left: -320px;
         max-width: 300px;
         margin-top: 280px;
