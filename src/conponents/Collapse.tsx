@@ -25,8 +25,9 @@ const Collapse: React.FC<propsType> = ({ name, data }) => {
 
   return (
     <>
-      <div className="collapse-location__div">
+      <div data-testid="collapse" className="collapse-location__div">
         <h1
+        data-testid="collapseH1"
           className="collapse-location__h1"
           onClick={() => {
             updateUseState();
@@ -49,9 +50,9 @@ const Collapse: React.FC<propsType> = ({ name, data }) => {
               return <p>{d}</p>;
             })}
           {data && typeof data === "string" && collapse === true ? (
-            <p>{data}</p>
+            <p data-testid="collapseP">{data}</p>
           ) : (
-            <p></p>
+            <p data-testid="collapseP"></p>
           )}
         </div>
       </div>

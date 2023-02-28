@@ -27,7 +27,7 @@ const Fetchone: React.FC = () => {
   const [datas, setDatas] = useState<dataType | null>(null);
   const navigate = useNavigate();
   useEffect(() => {
-    if (datas === null) {
+   // if (datas === null) {
       const getData = async () => {
         const respone = await fetch("../data/data.json");
         const dataRespone: dataType[] = await respone.json();
@@ -35,14 +35,14 @@ const Fetchone: React.FC = () => {
           return id === d.id;
         });
         if (one.length === 0) {
-          return navigate("/");
+          return navigate("/error");
         }
         setDatas(one[0]);
       };
 
       getData();
-    }
-  });
+    //}
+  }, [id, navigate]);
 
   return (
     <>

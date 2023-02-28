@@ -13,7 +13,7 @@ const Error404: React.FC = () => {
           <p className="error__p">
             Oups ! La page que vous demandez n'existe pas.
           </p>
-          <Link className="error__a" to="/">
+          <Link data-testid="errorLink" className="error__a" to="/">
             Retourner sur la page d’accueil
           </Link>
         </section>

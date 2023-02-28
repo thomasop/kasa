@@ -23,7 +23,7 @@ const Fetchall: React.FC = () => {
   const [datas, setDatas] = useState<dataType[] | null>(null);
 
   useEffect(() => {
-    if (datas === null) {
+    //if (datas === null) {
       const getData = async () => {
         const respone = await fetch("./data/data.json");
         const dataRespone: dataType[] = await respone.json();
@@ -31,15 +31,16 @@ const Fetchall: React.FC = () => {
       };
 
       getData();
-    }
-  });
+    //}
+  }, []);
 
   return (
     <>
-      <div className="housings">
+      <div data-testid="fetchall" className="housings">
         {datas?.map((data) => {
           return (
             <Link
+              data-testid="fetchalla"
               className="housings__a"
               to={`/location/${data.id}`}
               key={data.id}

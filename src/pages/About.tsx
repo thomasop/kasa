@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <>
       <Header />
       <main>
-        <div className="about"></div>
+        <div data-testid="about" className="about"></div>
         <Fetchabout />
       </main>
       <Footer />

@@ -19,12 +19,12 @@ const Rating: React.FC<propsType> = ({ nbRating }) => {
     nb++;
   }
   return (
-    <div className="rating">
+    <div data-testid="rating" className="rating">
       {arrayRating.map((rat, key) => {
         return rat === "full" ? (
-          <img key={key} className="rating__img" src="../assets/VectorFull.svg" alt="" />
+          <img data-testid="ratingImgFull" key={key} className="rating__img" src="../assets/VectorFull.svg" alt="" />
         ) : (
-          <img key={key} className="rating__img" src="../assets/VectorEmpty.svg" alt="" />
+          <img data-testid="ratingImgEmpty" key={key} className="rating__img" src="../assets/VectorEmpty.svg" alt="" />
         );
       })}
     </div>
