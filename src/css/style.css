@@ -1,15 +1,6 @@
 /* import police on google font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
-/* Variable for color and animation duration */ /* Maps for responsive device */
-/* Maps for responsive device */
-/* Mixins for responsive device */
-/* like animation */ /* Maps for responsive device */
-/* Mixins for responsive device */
-/* import police on google font */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
-/* Maps for responsive device */
-/* Mixins for responsive device */
-/* Base tag */
+/* Variable for color and animation duration */ /* Maps for responsive device */ /* Mixins for responsive device */ /* Base tag */
 body {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
@@ -31,12 +22,12 @@ body {
   }
 }
 .header__figure {
-  flex: 2;
+  flex: 3;
   margin: 0px;
 }
-@media screen and (min-width: 1700px) {
+@media screen and (max-width: 1330px) {
   .header__figure {
-    flex: 3;
+    flex: 2;
   }
 }
 @media screen and (max-width: 992px) {
@@ -58,7 +49,7 @@ body {
     height: 47px;
   }
 }
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 374px) {
   .header__img {
     width: 120px;
     height: 40px;
@@ -98,6 +89,9 @@ body {
     padding-left: 10px;
   }
 }
+.header__li:hover {
+  transform: scale(1.1);
+}
 .header__a {
   text-decoration: none;
   color: #FF6060;
@@ -117,6 +111,11 @@ body {
 
 .active {
   border-bottom: 2px solid #FF6060;
+}
+@media screen and (max-width: 600px) {
+  .active {
+    border-bottom: 1px solid #FF6060;
+  }
 }
 
 /* Footer conponent */
@@ -214,7 +213,17 @@ body {
     height: 255px;
   }
 }
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 600px) {
+  .housings__img {
+    width: 385px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .housings__img {
+    width: 335px;
+  }
+}
+@media screen and (max-width: 374px) {
   .housings__img {
     width: 275px;
     height: 235px;
@@ -236,12 +245,25 @@ body {
     margin-top: 195px;
   }
 }
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 600px) {
+  .housings__span {
+    margin-left: -360px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .housings__span {
+    margin-left: -320px;
+  }
+}
+@media screen and (max-width: 374px) {
   .housings__span {
     max-width: 245px;
     margin-top: 175px;
     margin-left: -260px;
   }
+}
+.housings__a:hover {
+  transform: scale(1.03);
 }
 
 /* Fetchone conponent */
@@ -325,6 +347,9 @@ body {
   font-size: 18px;
   font-weight: 500;
   width: 90px;
+  margin-right: 10px;
+  text-align: end;
+  margin-top: 16px;
 }
 @media screen and (max-width: 600px) {
   .housing__h2 {
@@ -342,6 +367,14 @@ body {
   .housing__img {
     width: 32px;
     height: 32px;
+  }
+}
+.housing__div--one {
+  max-width: 70%;
+}
+@media screen and (max-width: 600px) {
+  .housing__div--one {
+    max-width: unset;
   }
 }
 @media screen and (max-width: 600px) {
@@ -375,6 +408,7 @@ body {
   }
 }
 .collapse-location__h1 {
+  cursor: pointer;
   background-color: #FF6060;
   border-radius: 10px;
   padding: 20px 0px 20px 13px;
@@ -411,19 +445,30 @@ body {
 @media screen and (max-width: 992px) {
   .collapse-location__p {
     font-size: 14px;
-    height: 170px;
-    padding: 40px 11px 0px 11px;
+    height: unset;
+    padding: 40px 11px 10px 11px;
   }
 }
 @media screen and (max-width: 600px) {
   .collapse-location__p {
     font-size: 12px;
-    height: 140px;
-    padding: 40px 11px 0px 11px;
   }
+}
+.collapse-location__p--line {
+  line-height: 10px;
 }
 .collapse-location__div {
   width: 582px;
+}
+@media screen and (min-width: 2000px) {
+  .collapse-location__div {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1330px) {
+  .collapse-location__div {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 1330px) {
   .collapse-location__div {
@@ -440,6 +485,16 @@ body {
   top: -40px;
   left: 530px;
 }
+@media screen and (min-width: 2000px) {
+  .collapse-location__img {
+    left: 700px;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1330px) {
+  .collapse-location__img {
+    left: 450px;
+  }
+}
 @media screen and (max-width: 1330px) {
   .collapse-location__img {
     left: 350px;
@@ -447,6 +502,8 @@ body {
 }
 @media screen and (max-width: 992px) {
   .collapse-location__img {
+    width: 24px;
+    height: 16px;
     left: unset;
     right: 0;
     top: -31px;
@@ -476,8 +533,14 @@ body {
 .rating {
   margin-top: 14px;
 }
+@media screen and (max-width: 1330px) {
+  .rating {
+    min-width: 200px;
+  }
+}
 @media screen and (max-width: 992px) {
   .rating {
+    min-width: unset;
     margin-top: 5px;
   }
 }
@@ -536,6 +599,7 @@ body {
   left: 0;
   top: 335px;
   margin-left: 123px;
+  cursor: pointer;
 }
 @media screen and (max-width: 992px) {
   .carrousel__previous {
@@ -552,7 +616,11 @@ body {
     top: 214px;
   }
 }
+.carrousel__previous:hover {
+  transform: scale(1.05);
+}
 .carrousel__next {
+  cursor: pointer;
   position: absolute;
   right: 0;
   float: right;
@@ -573,6 +641,9 @@ body {
     margin-right: 30px;
     top: 214px;
   }
+}
+.carrousel__next:hover {
+  transform: scale(1.05);
 }
 .carrousel__p {
   text-align: center;
@@ -599,6 +670,14 @@ body {
 .collapse-about {
   margin: 43px 200px 100px 200px;
 }
+@media screen and (min-width: 2000px) {
+  .collapse-about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 992px) {
   .collapse-about {
     margin: 43px 50px 100px 50px;
@@ -613,12 +692,23 @@ body {
 .collapse-about div {
   width: 100%;
 }
+@media screen and (min-width: 2000px) {
+  .collapse-about div {
+    width: 600px;
+  }
+}
 
 .collapse-about h1 {
   font-size: 24px;
   font-weight: 500;
   padding: 16px 0px 16px 18px;
   margin-top: 30px;
+}
+@media screen and (max-width: 992px) {
+  .collapse-about h1 {
+    font-size: 14px;
+    padding: 10px 0px 10px 14px;
+  }
 }
 @media screen and (max-width: 600px) {
   .collapse-about h1 {
@@ -639,10 +729,15 @@ body {
   right: 0;
   margin-right: 30px;
 }
+@media screen and (max-width: 992px) {
+  .collapse-about img {
+    top: -27px;
+    margin-right: 10px;
+  }
+}
 @media screen and (max-width: 600px) {
   .collapse-about img {
     top: -22px;
-    margin-right: 10px;
   }
 }
 
@@ -659,18 +754,18 @@ body {
 .collapse-about div div p {
   font-size: 24px;
   font-weight: 500;
-  padding: 0px 18px 0px 26px;
+  padding: 10px 18px 0px 26px;
 }
 @media screen and (max-width: 600px) {
   .collapse-about div div p {
     font-size: 12px;
-    padding: 0px 6px 0px 11px;
+    padding: 10px 6px 0px 11px;
   }
 }
 
 /* Style for home page */
 .banner {
-  margin: 70px 100px 0px 100px;
+  margin: 63px 100px 0px 100px;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../public/assets/homeimg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -679,22 +774,28 @@ body {
 }
 @media screen and (max-width: 992px) {
   .banner {
-    margin: 0px 50px;
+    margin: 20px 50px 0px 50px;
   }
 }
 @media screen and (max-width: 600px) {
   .banner {
-    width: 335px;
+    width: 385px;
+    margin: 16px auto 0px auto;
     border-radius: 10px;
-    margin: 20px auto 0px auto;
   }
 }
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 424px) {
+  .banner {
+    width: 335px;
+  }
+}
+@media screen and (max-width: 374px) {
   .banner {
     width: 275px;
   }
 }
 .banner__h1 {
+  margin: 0;
   position: relative;
   z-index: 1;
   padding: 78px 0px;

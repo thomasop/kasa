@@ -1,7 +1,7 @@
 import React from "react";
-import Fetchall from "../conponents/Fetchall";
-import Footer from "../conponents/Footer";
-import Header from "../conponents/Header";
+import Fetchall from "../components/Fetchall";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Home: React.FC = () => {
   return (

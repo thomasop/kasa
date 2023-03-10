@@ -6,10 +6,8 @@ interface propsType {
 }
 
 const Collapse: React.FC<propsType> = ({ name, data }) => {
-  const [collapse, setCollapse] = useState<boolean>(false);
   const [styleDisplay, setStyleDisplay] = useState<string>("none");
-  const [styleTransform, setStyleTransform] =
-    useState<string>("rotate(180deg)");
+  const [styleTransform, setStyleTransform] = useState<string>("rotate(180deg)");
   const pStyle = {
     display: styleDisplay,
   };
@@ -18,7 +16,6 @@ const Collapse: React.FC<propsType> = ({ name, data }) => {
   };
 
   const updateUseState = () => {
-    collapse === false ? setCollapse(true) : setCollapse(false);
     styleDisplay === "none" ? setStyleDisplay("block") : setStyleDisplay("none");
     styleTransform === "rotate(180deg)" ? setStyleTransform("rotate(360deg)") : setStyleTransform("rotate(180deg)");
   };
@@ -43,16 +40,12 @@ const Collapse: React.FC<propsType> = ({ name, data }) => {
         />
 
         <div style={pStyle} className="collapse-location__p">
-          {data &&
-            typeof data !== "string" &&
-            collapse === true &&
-            data?.map((d) => {
-              return <p>{d}</p>;
+          {data && typeof data !== "string" &&
+            data?.map((d, index) => {
+              return <p key={index} className="collapse-location__p--line">{d}</p>;
             })}
-          {data && typeof data === "string" && collapse === true ? (
+          {data && typeof data === "string" && (
             <p data-testid="collapseP">{data}</p>
-          ) : (
-            <p data-testid="collapseP"></p>
           )}
         </div>
       </div>

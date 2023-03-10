@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { BrowserRouter, MemoryRouter, Route, Routes } from "react-router-dom";
-import Header from "../../conponents/Header";
+import Header from "../../components/Header";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 
@@ -56,8 +56,8 @@ describe("Given I am on kasa", () => {
             </Routes>
           </MemoryRouter>
         );
-        const about = screen.getByTestId("about")
-        expect(about).toBeInTheDocument()
+        const about = screen.getByTestId("about");
+        expect(about).toBeInTheDocument();
       });
     });
   });

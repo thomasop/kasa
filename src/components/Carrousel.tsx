@@ -11,7 +11,7 @@ const Carrousel: React.FC<propsType> = ({ images }) => {
       return (
         <>
           <img
-          data-testid="carrouselN"
+            data-testid="carrouselN"
             src="../assets/VectorPrevious.svg"
             alt=""
             className="carrousel__previous"
@@ -20,7 +20,7 @@ const Carrousel: React.FC<propsType> = ({ images }) => {
             }}
           />
           <img
-          data-testid="carrouselP"
+            data-testid="carrouselP"
             src="../assets/VectorNext.svg"
             alt=""
             className="carrousel__next"
@@ -38,7 +38,12 @@ const Carrousel: React.FC<propsType> = ({ images }) => {
 
   return (
     <>
-      <img data-testid="carrousel" className="carrousel__img" src={images && images[num]} alt="" />
+      <img
+        data-testid="carrousel"
+        className="carrousel__img"
+        src={images && images[num]}
+        alt=""
+      />
       {showCarrousel()}
     </>
   );

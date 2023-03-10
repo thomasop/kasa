@@ -23,15 +23,13 @@ const Fetchall: React.FC = () => {
   const [datas, setDatas] = useState<dataType[] | null>(null);
 
   useEffect(() => {
-    //if (datas === null) {
-      const getData = async () => {
-        const respone = await fetch("./data/data.json");
-        const dataRespone: dataType[] = await respone.json();
-        setDatas(dataRespone);
-      };
+    const getData = async () => {
+      const respone = await fetch("./data/data.json");
+      const dataRespone: dataType[] = await respone.json();
+      setDatas(dataRespone);
+    };
 
-      getData();
-    //}
+    getData();
   }, []);
 
   return (
@@ -45,9 +43,9 @@ const Fetchall: React.FC = () => {
               to={`/location/${data.id}`}
               key={data.id}
             >
-              <img className="housings__img" src={data.cover} alt="" /><span className="housings__span">{data.title}</span>
+              <img className="housings__img" src={data.cover} alt="" />
+              <span className="housings__span">{data.title}</span>
             </Link>
-            
           );
         })}
       </div>

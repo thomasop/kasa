@@ -2,7 +2,11 @@
 
 .rating {
     margin-top: 14px;
+    @include littledesktop {
+        min-width: 200px;
+    }
     @include tablette {
+        min-width: unset;
         margin-top: 5px;
     }
     @include mobile {

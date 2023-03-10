@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../conponents/Footer";
-import Fetchone from "../conponents/Fetchone";
-import Header from "../conponents/Header";
+import Footer from "../components/Footer";
+import Fetchone from "../components/Fetchone";
+import Header from "../components/Header";
 
 const Location: React.FC = () => {
   return (

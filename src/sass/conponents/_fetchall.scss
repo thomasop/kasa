@@ -36,6 +36,12 @@
             width: 335px;
             height: 255px;
         }
+        @include mobile {
+            width: 385px;
+        }
+        @include bigmobile {
+            width: 335px;
+        }
         @include minimobile {
             width: 275px;
             height: 235px;
@@ -54,10 +60,21 @@
             max-width: 295px;
             margin-top: 195px;
         }
+        @include mobile {
+            margin-left: -360px;
+        }
+        @include bigmobile {
+            margin-left: -320px;
+        }
         @include minimobile {
             max-width: 245px;
             margin-top: 175px;
             margin-left: -260px;
+        }
+    }
+    &__a {
+        &:hover {
+            transform: scale(1.03);
         }
     }
 }

@@ -1,11 +1,13 @@
 /* Maps for responsive device */
 
 $break: (
-    minimobile: 321px,
+    minimobile: 374px,
+    mobiles: 424px,
     mobile: 600px,
     littletablette: 850px,
     tablette: 992px,
     littledesktop: 1330px,
+    mediumdesktop: 1400px,
     desktop: 1700px,
     bigdesktop: 2000px
 );

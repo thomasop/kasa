@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "../conponents/Footer";
-import Header from "../conponents/Header";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Error404: React.FC = () => {
   return (

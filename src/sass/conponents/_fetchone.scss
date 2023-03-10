@@ -65,6 +65,9 @@
         font-size: 18px;
         font-weight: 500;
         width: 90px;
+        margin-right: 10px;
+        text-align: end;
+        margin-top: 16px;
         @include mobile {
             font-size: 12px;
             width: 60px;
@@ -81,6 +84,12 @@
         }
     }
     &__div {
+        &--one {
+            max-width: 70%;
+            @include mobile {
+                max-width: unset;
+            }
+        }
         &--two {
             @include mobile {
                 display: flex;

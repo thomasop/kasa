@@ -1,5 +1,3 @@
-@import "./maps";
-
 /* Mixins for responsive device */
 
 @mixin minimobile {
@@ -10,6 +8,12 @@
 
 @mixin mobile {
     @media screen and (max-width: map-get($break, mobile)) {
+        @content
+    }
+}
+
+@mixin bigmobile {
+    @media screen and (max-width: map-get($break, mobiles)) {
         @content
     }
 }
@@ -28,6 +32,12 @@
 
 @mixin littledesktop {
     @media screen and (max-width: map-get($break, littledesktop)) {
+        @content
+    }
+}
+
+@mixin mediumdesktop {
+    @media screen and (max-width: map-get($break, mediumdesktop)) and (min-width: map-get($break, littledesktop)) {
         @content
     }
 }
